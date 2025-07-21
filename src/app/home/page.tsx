@@ -71,7 +71,7 @@ const Homepage = () => {
 
     return (
         <div className="p-4">
-            <h1 className="text-3xl font-bold mb-4 text-center text-black">Pokémon List</h1>
+            <h1 className="text-3xl font-bold mb-4 text-center text color: var(--foreground)">Pokémon List</h1>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                 {pokemons.map((poke, idx) => (
                     <Link href={`/home/description/${poke.name}`} key={idx} className="group">

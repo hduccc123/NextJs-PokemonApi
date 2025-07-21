@@ -25,7 +25,7 @@ export default function ThemeToggle() {
     return (
         <button
             onClick={toggleTheme}
-            className="px-4 cursor-pointer capitalize font-medium hover:scale-105 hover:text-white duration-200 link-underline"
+            className="px-4 cursor-pointer capitalize font-medium hover:scale-105 hover:text-white duration-200 link-underline color: var(--foreground)"
         >
             {darkMode ? '☀️ Light' : '🌙 Dark'}
         </button>

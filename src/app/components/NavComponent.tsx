@@ -30,16 +30,16 @@ const NavComponent = () => {
 
             {/* Menu chính (Desktop) */}
             <ul className="hidden md:flex absolute left-1/2 -translate-x-1/2 text-black">
-                <li className="nav-links px-4 cursor-pointer capitalize font-medium hover:scale-105 hover:text-gray-600 duration-200 link-underline text-black">
-                    <Link href="#home">home</Link>
+                <li className="nav-links px-4 cursor-pointer capitalize font-medium hover:scale-105 hover:text-gray-200 duration-200 text-gray-900 dark:text-white hover:text-gray-500 dark:hover:text-gray-300">
+                    <Link href="/home">home</Link>
                 </li>
-                <li className="nav-links px-4 cursor-pointer capitalize font-medium hover:scale-105 hover:text-gray-600 duration-200 link-underline text-black">
-                    <Link href="#about">about</Link>
+                <li className="nav-links px-4 cursor-pointer capitalize font-medium hover:scale-105 hover:text-gray-200 duration-200 text-gray-900 dark:text-white hover:text-gray-500 dark:hover:text-gray-300)">
+                    <Link href="/about">about</Link>
                 </li>
-                <li className="nav-links px-4 cursor-pointer capitalize font-medium hover:scale-105 hover:text-gray-600 duration-200 link-underline text-black">
+                <li className="nav-links px-4 cursor-pointer capitalize font-medium hover:scale-105 hover:text-gray-200 duration-200 text-gray-900 dark:text-white hover:text-gray-500 dark:hover:text-gray-300">
                     <Link href="#languages">languages</Link>
                 </li>
-                <li className="nav-links px-4 cursor-pointer capitalize font-medium hover:scale-105 hover:text-gray-600 duration-200 link-underline text-black">
+                <li className="nav-links px-4 cursor-pointer capitalize font-medium hover:scale-105 hover:text-gray-200 duration-200 text-gray-900 dark:text-white hover:text-gray-500 dark:hover:text-gray-300">
                     <ChangeThemeToggle />
                 </li>
             </ul>
@@ -62,7 +62,7 @@ const NavComponent = () => {
                         <Link onClick={() => setNav(false)} href="#home">home</Link>
                     </li>
                     <li className="px-4 cursor-pointer capitalize py-6 text-4xl">
-                        <Link onClick={() => setNav(false)} href="#about">about</Link>
+                        <Link onClick={() => setNav(false)} href="/about">about</Link>
                     </li>
                     <li className="px-4 cursor-pointer capitalize py-6 text-4xl">
                         <Link onClick={() => setNav(false)} href="#languages">languages</Link>
