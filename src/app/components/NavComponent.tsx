@@ -9,7 +9,7 @@ const NavComponent = () => {
     const [nav, setNav] = useState(false);
 
     return (
-        <div className="flex justify-between items-center w-full h-20 px-4 text-white bg-[#a69494] fixed nav relative border-b-4 border-gray-200">
+        <div className="flex justify-between items-center w-full h-20 px-4 text-white fixed nav relative border-b-4 border-gray-200">
             {/* Logo */}
             <div>
                 <h1 className="text-5xl font-signature ml-2">
@@ -30,16 +30,16 @@ const NavComponent = () => {
 
             {/* Menu chính (Desktop) */}
             <ul className="hidden md:flex absolute left-1/2 -translate-x-1/2 text-black">
-                <li className="nav-links px-4 cursor-pointer capitalize font-medium hover:scale-105 hover:text-white duration-200 link-underline">
+                <li className="nav-links px-4 cursor-pointer capitalize font-medium hover:scale-105 hover:text-gray-600 duration-200 link-underline text-black">
                     <Link href="#home">home</Link>
                 </li>
-                <li className="nav-links px-4 cursor-pointer capitalize font-medium hover:scale-105 hover:text-white duration-200 link-underline">
+                <li className="nav-links px-4 cursor-pointer capitalize font-medium hover:scale-105 hover:text-gray-600 duration-200 link-underline text-black">
                     <Link href="#about">about</Link>
                 </li>
-                <li className="nav-links px-4 cursor-pointer capitalize font-medium hover:scale-105 hover:text-white duration-200 link-underline">
+                <li className="nav-links px-4 cursor-pointer capitalize font-medium hover:scale-105 hover:text-gray-600 duration-200 link-underline text-black">
                     <Link href="#languages">languages</Link>
                 </li>
-                <li className="nav-links px-4 cursor-pointer capitalize font-medium hover:scale-105 hover:text-white duration-200 link-underline">
+                <li className="nav-links px-4 cursor-pointer capitalize font-medium hover:scale-105 hover:text-gray-600 duration-200 link-underline text-black">
                     <ChangeThemeToggle />
                 </li>
             </ul>

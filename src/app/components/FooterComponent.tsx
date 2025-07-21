@@ -7,7 +7,7 @@ import Image from "next/image";
 
 const Footer = () => {
     return (
-        <footer className="bg-[#a69494] text-black py-10">
+        <footer className="text-black py-10">
             {/* Top Line */}
             <div className="border-t-4 border-gray-200"></div>
 

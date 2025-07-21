@@ -30,17 +30,20 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body>
-
-        <NavComponent />
-        <div className="flex">
-          <LeftComponent />
-          <div className="flex-1">
-            {children}
+      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+        <Providers>
+          <div className="min-h-screen bg-background text-foreground">
+            <NavComponent />
+            <div className="flex">
+              <LeftComponent />
+              <div className="flex-1">
+                {children}
+              </div>
+              <RightComponent />
+            </div>
+            <Footer />
           </div>
-          <RightComponent />
-        </div>
-        <Footer />
+        </Providers>
       </body>
     </html>
   );
