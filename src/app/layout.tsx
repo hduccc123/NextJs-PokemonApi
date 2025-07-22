@@ -7,6 +7,7 @@ import ThemeToggle from "./components/ChangeThemeToggle";
 import { Providers } from "./Providers";
 import LeftComponent from "./components/LeftComponent";
 import RightComponent from "./components/RightComponent";
+import ScrollToTopButton from "./components/ScrollTopButton";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -36,9 +37,10 @@ export default function RootLayout({
             <NavComponent />
             <div className="flex">
               <LeftComponent />
-              <div className="flex-1">
+              <div className="flex-2">
                 {children}
               </div>
+              <ScrollToTopButton />
               <RightComponent />
             </div>
             <Footer />
