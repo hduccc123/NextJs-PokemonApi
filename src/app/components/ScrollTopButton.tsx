@@ -7,7 +7,7 @@ const ScrollToTopButton = () => {
 
     useEffect(() => {
         const toggleVisible = () => {
-            setVisible(window.scrollY > 100); // hiện nút nếu scroll > 300px
+            setVisible(window.scrollY > 100); // hiện nút nếu scroll > 100px
         };
 
         window.addEventListener("scroll", toggleVisible);

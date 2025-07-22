@@ -1,4 +1,4 @@
-import ToggleUp from "./ToggleUp";
+
 
 const RightComponent = () => {
     return (
